@@ -17,7 +17,7 @@ _e.g._ If you're using [nodemon](https://github.com/remy/nodemon) you should be 
 ```json
 {
   "events": {
-    "restart": "sleep 1; curl http://localhost:35729/changed"
+    "restart": "sleep 1; curl http://localhost:35729/changed?files=foo"
   }
 }
 
