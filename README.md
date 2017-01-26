@@ -44,6 +44,15 @@ export LR_PORT=9999
 tlr
 ```
 
+## Workflow ideas
+
+- Use it along with [nodemon](https://github.com/remy/nodemon)
+- and [concurrently](https://github.com/kimmobrunfeldt/concurrently)
+- to provide a single [npm task](https://github.com/ruyadorno/ntl)
+- that can be used as entry point
+- Add a `<script src="//localhost:35729/livereload.js"></script>` to your html template
+- Livereload FTW!
+
 ## License
 
 MIT © [Ruy Adorno](http://ruyadorno.com)
