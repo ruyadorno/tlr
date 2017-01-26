@@ -1,0 +1,44 @@
+{
+  "name": "tlr",
+  "version": "1.0.0",
+  "description": "Quick spawn a tiny-lr server",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "lint": "eslint index.js test.js",
+    "test": "mocha test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruyadorno/tlr.git"
+  },
+  "keywords": [
+    "livereload",
+    "tiny-lr",
+    "tiny",
+    "live",
+    "reload",
+    "server"
+  ],
+  "author": {
+    "name": "Ruy Adorno",
+    "url": "ruyadorno.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ruyadorno/tlr/issues"
+  },
+  "homepage": "https://github.com/ruyadorno/tlr#readme",
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-xo": "^0.17.0",
+    "mocha": "^3.2.0",
+    "supertest": "^2.0.1"
+  },
+  "dependencies": {
+    "tiny-lr": "^1.0.3"
+  }
+}
