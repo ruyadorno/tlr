@@ -1,3 +1,4 @@
+/* eslint-env mocha */
 'use strict';
 
 // starts localhost:35729
@@ -57,21 +58,22 @@ describe('tlr', function () {
 	});
 
 	it('should be able to POST /changed to reload client with files', function (done) {
-		var data = { clients: [], files: ['cat.css', 'sed.css', 'ack.js'] };
+		var data = {clients: [], files: ['cat.css', 'sed.css', 'ack.js']};
 		request('http://localhost:35729')
 			.post('/changed')
-			.send({ files: data.files })
+			.send({files: data.files})
 			.expect('Content-Type', /json/)
 			.expect(JSON.stringify(data))
 			.expect(200, done);
 	});
 
-	it('should be able to /kill the server', function () {
+	it('should be able to /kill the server', function (done) {
 		request('http://localhost:35729')
 			.get('/kill')
-			.expect(200, function(err) {
-				if(err) return done(err);
-				assert.ok(!server._handle);
+			.expect(200, function (err) {
+				if (err) {
+					return done(err);
+				}
 				done();
 			});
 	});

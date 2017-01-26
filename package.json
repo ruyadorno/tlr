@@ -6,6 +6,7 @@
   "bin": "./index.js",
   "scripts": {
     "lint": "eslint index.js test.js",
+    "pretest": "npm run lint",
     "test": "mocha test.js"
   },
   "files": [
